@@ -7,7 +7,7 @@ namespace Myproject
         int interest_rate;
         int years;
         
-        public void FinancialCalc(int p,int r, inr y)
+        public void FinancialCalc(int p,int r, int y)
         {
         this.principle=p;
         this.interest_rate=r;

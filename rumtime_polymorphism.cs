@@ -1,28 +1,46 @@
 namespace ConsoleApp16
 {
+    class engine
+    {
+        public virtual Start()
+        {
+        }
+        public virual Stop()
+        {
+        }
+        
+    }
 
     class TataCar
     {
+        Engine _engine;
+        TataCar(Engine e)
+        {
+            _engine=e;
+        }
         //Dependency
-        RevtronEngine _engine=new RevtronEngine(); //composition
+        
         public void Ignite() {
-        _engine.Start();
+           _engine.Start();
         }
         public void Halt() {
             _engine.Stop();
         }
     }
-    class RevtronEngine
+    class RevtronEngine:Engine
     {
         public void Start() { }
         public void Stop() { }
     }
-    class VericoreEngine
+    class VericoreEngine:Engine
     {
-
+       public void Start() { }
+        public void Stop() { }
     }
-    class KrytoechEngine
+    class KrytoechEngine:Engine
     {
+     public void Start() { }
+        public void Stop() { }
 
     }
     internal class Program

@@ -47,11 +47,11 @@ namespace ConsoleApp16
     {
         static void Main(string[] args)
         {
-            TataCar _nexon = new TataCar();
+            TataCar _nexon = new TataCar(RevtronEngine);
 
-            TataCar _harrier = new TataCar(); //Kryotech engine
+            TataCar _harrier = new TataCar(KrytoechEngine); //Kryotech engine
 
-            TataCar _hexa = new TataCar();//vericore engine
+            TataCar _hexa = new TataCar(VericoreEngine);//vericore engine
 
             FamilyOccassion _family = new FamilyOccassion();
             Parent _parentInstance = new Parent();

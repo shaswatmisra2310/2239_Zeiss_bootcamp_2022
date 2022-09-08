@@ -5,7 +5,7 @@ namespace ConsoleApp16
         public virtual Start()
         {
         }
-        public virual Stop()
+        public virtual Stop()
         {
         }
         

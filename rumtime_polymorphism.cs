@@ -39,7 +39,9 @@ namespace Myproject
         {
         FinancialCalc newUserFinance = new FinanceCalc[2];
         newUserFinance[0]=new SimpleInterest(20,0.01,2);
-        
+        newUserFinance[1]=new ComoundInterest(20,0.01,4);
+        foreach(FinanceCalc f in newUserFinance)
+            f.calcinterest();
         }
     }
 
